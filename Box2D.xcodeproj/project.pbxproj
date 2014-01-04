@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C1258C31877FEA10086BD39 /* libBox2D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1258AB1877FEA00086BD39 /* libBox2D.a */; };
 		2C12593A1877FEFE0086BD39 /* b2BroadPhase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C1258D81877FEFE0086BD39 /* b2BroadPhase.cpp */; };
 		2C12593B1877FEFE0086BD39 /* b2CollideCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C1258DA1877FEFE0086BD39 /* b2CollideCircle.cpp */; };
 		2C12593C1877FEFE0086BD39 /* b2CollideEdge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C1258DB1877FEFE0086BD39 /* b2CollideEdge.cpp */; };
@@ -56,16 +55,6 @@
 		2C1259671877FEFE0086BD39 /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C1259381877FEFE0086BD39 /* b2Rope.cpp */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2C1258C11877FEA10086BD39 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2C1258A31877FEA00086BD39 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C1258AA1877FEA00086BD39;
-			remoteInfo = Box2D;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		2C1258A91877FEA00086BD39 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -80,7 +69,6 @@
 
 /* Begin PBXFileReference section */
 		2C1258AB1877FEA00086BD39 /* libBox2D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBox2D.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C1258BB1877FEA10086BD39 /* Box2DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Box2DTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1258D41877FEFE0086BD39 /* Box2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2D.h; sourceTree = "<group>"; };
 		2C1258D81877FEFE0086BD39 /* b2BroadPhase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2BroadPhase.cpp; sourceTree = "<group>"; };
 		2C1258D91877FEFE0086BD39 /* b2BroadPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2BroadPhase.h; sourceTree = "<group>"; };
@@ -187,14 +175,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C1258B81877FEA10086BD39 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C1258C31877FEA10086BD39 /* libBox2D.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -211,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				2C1258AB1877FEA00086BD39 /* libBox2D.a */,
-				2C1258BB1877FEA10086BD39 /* Box2DTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -402,24 +381,6 @@
 			productReference = 2C1258AB1877FEA00086BD39 /* libBox2D.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		2C1258BA1877FEA10086BD39 /* Box2DTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2C1258D11877FEA10086BD39 /* Build configuration list for PBXNativeTarget "Box2DTests" */;
-			buildPhases = (
-				2C1258B71877FEA10086BD39 /* Sources */,
-				2C1258B81877FEA10086BD39 /* Frameworks */,
-				2C1258B91877FEA10086BD39 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2C1258C21877FEA10086BD39 /* PBXTargetDependency */,
-			);
-			name = Box2DTests;
-			productName = Box2DTests;
-			productReference = 2C1258BB1877FEA10086BD39 /* Box2DTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -442,20 +403,9 @@
 			projectRoot = "";
 			targets = (
 				2C1258AA1877FEA00086BD39 /* Box2D */,
-				2C1258BA1877FEA10086BD39 /* Box2DTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		2C1258B91877FEA10086BD39 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C1258A71877FEA00086BD39 /* Sources */ = {
@@ -511,22 +461,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C1258B71877FEA10086BD39 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2C1258C21877FEA10086BD39 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2C1258AA1877FEA00086BD39 /* Box2D */;
-			targetProxy = 2C1258C11877FEA10086BD39 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2C1258CC1877FEA10086BD39 /* Debug */ = {
@@ -629,44 +564,6 @@
 			};
 			name = Release;
 		};
-		2C1258D21877FEA10086BD39 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Box2D/Box2D-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Box2DTests/Box2DTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		2C1258D31877FEA10086BD39 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Box2D/Box2D-Prefix.pch";
-				INFOPLIST_FILE = "Box2DTests/Box2DTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -684,15 +581,6 @@
 			buildConfigurations = (
 				2C1258CF1877FEA10086BD39 /* Debug */,
 				2C1258D01877FEA10086BD39 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2C1258D11877FEA10086BD39 /* Build configuration list for PBXNativeTarget "Box2DTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2C1258D21877FEA10086BD39 /* Debug */,
-				2C1258D31877FEA10086BD39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

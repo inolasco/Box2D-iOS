@@ -82,8 +82,6 @@
 		2C1258AB1877FEA00086BD39 /* libBox2D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBox2D.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1258BB1877FEA10086BD39 /* Box2DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Box2DTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1258D41877FEFE0086BD39 /* Box2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2D.h; sourceTree = "<group>"; };
-		2C1258D51877FEFE0086BD39 /* Box2DConfig.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Box2DConfig.cmake; sourceTree = "<group>"; };
-		2C1258D61877FEFE0086BD39 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		2C1258D81877FEFE0086BD39 /* b2BroadPhase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2BroadPhase.cpp; sourceTree = "<group>"; };
 		2C1258D91877FEFE0086BD39 /* b2BroadPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2BroadPhase.h; sourceTree = "<group>"; };
 		2C1258DA1877FEFE0086BD39 /* b2CollideCircle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2CollideCircle.cpp; sourceTree = "<group>"; };
@@ -176,6 +174,9 @@
 		2C1259361877FEFE0086BD39 /* b2WheelJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2WheelJoint.h; sourceTree = "<group>"; };
 		2C1259381877FEFE0086BD39 /* b2Rope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2Rope.cpp; sourceTree = "<group>"; };
 		2C1259391877FEFE0086BD39 /* b2Rope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2Rope.h; sourceTree = "<group>"; };
+		2C12596E187801CD0086BD39 /* Changes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changes.txt; sourceTree = SOURCE_ROOT; };
+		2C125970187801CD0086BD39 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = SOURCE_ROOT; };
+		2C125971187801CD0086BD39 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +201,7 @@
 		2C1258A21877FEA00086BD39 = {
 			isa = PBXGroup;
 			children = (
+				2C125972187801FF0086BD39 /* Docs */,
 				2C1258B01877FEA00086BD39 /* Box2D */,
 				2C1258AC1877FEA00086BD39 /* Products */,
 			);
@@ -218,8 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				2C1258D41877FEFE0086BD39 /* Box2D.h */,
-				2C1258D51877FEFE0086BD39 /* Box2DConfig.cmake */,
-				2C1258D61877FEFE0086BD39 /* CMakeLists.txt */,
 				2C1258D71877FEFE0086BD39 /* Collision */,
 				2C1258EF1877FEFE0086BD39 /* Common */,
 				2C1258FD1877FEFE0086BD39 /* Dynamics */,
@@ -370,6 +370,16 @@
 				2C1259391877FEFE0086BD39 /* b2Rope.h */,
 			);
 			path = Rope;
+			sourceTree = "<group>";
+		};
+		2C125972187801FF0086BD39 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				2C125971187801CD0086BD39 /* Readme.md */,
+				2C12596E187801CD0086BD39 /* Changes.txt */,
+				2C125970187801CD0086BD39 /* License.txt */,
+			);
+			name = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -676,6 +686,7 @@
 				2C1258D01877FEA10086BD39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C1258D11877FEA10086BD39 /* Build configuration list for PBXNativeTarget "Box2DTests" */ = {
 			isa = XCConfigurationList;
@@ -684,6 +695,7 @@
 				2C1258D31877FEA10086BD39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
